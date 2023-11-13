@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sulwhasoo</title>
+    
+    <!--파비콘-->
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <!-- 구글폰트 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Baskervville:ital@0;1&family=Do+Hyeon&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mynerve&family=Playfair:wght@300&family=Roboto+Slab:wght@100&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="js/script.js" defer></script>
+    
+</head>
+<body>
+    <!--헤더-->
+    <header class="header">
+            <div class="top">
+                <h1 class="logo">설화수 로고</h1>
+                <div class="search_area">
+                    <form action="" name="search_form" class="search_form">
+                        <label for="search_txt" class="search_group">
+                            <input type="text" placeholder="검색어를 입력하세요." id="search_txt">
+                            <button class="search_btn"><a href="#"><span class="material-symbols-outlined">search</span></a></button>
+                        </label>
+                    </form>
+                </div>
+                <div class="globalgnb">
+                    <p class="icon">
+                        <ul>
+                            <li><a href="#"><img src="img/login.png" alt="로그인 아이콘"></a></li>
+                            <li><a href="#"><img src="img/jion.png" alt="회원가입 아이콘"></a></li>
+                            <li><a href="#"><img src="img/cart.png" alt="장바구니 아이콘"></a></li>
+                        </ul>
+                    </p>
+                    <p class="store_buy">
+                        <ul>
+                            <li class="store_buy_search"><a href="#">오프라인 매장 찾기</a></li>
+                            <li><a href="#">구매하기</a></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="lan_box">
+                    <select name="lan_list">
+                        <option value="korea">한국/한국어</option>
+                        <option value="English">International/English</option>
+                        <option value="China">中国大陆/中文</option>
+                        <option value="vietnam">中國香港/繁體中文</option>
+                        <option value="Singapore">Malaysia/English</option>
+                        <option value="Singapore">Việt Nam/Tiếng Việt</option>
+                        <option value="Singapore">Singapore/ENGLISH</option>
+                        <option value="Singapore">USA/ENGLISH</option>
+                        <option value="Singapore">INDONESIA/BAHASA INDONESIA</option>
+                    </select>
+                </div>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">브랜드 빌리프</a>
+                        <div class="subwrap" >
+                            <div class="inner">
+                                <ul class="depth_1"> 
+                                    <li>
+                                        <a href="#">브랜드 빌리프</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">브랜드 캠페인</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">브랜드 엠버서더</a>
+                                    </li>
+                                </ul>
+                                <ul class="depth_2">
+                                    <li><a href="#"><img src="img/gnb_li_01_brand_belief.jpg" alt="브랜드 빌리프"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">베스트셀러</a>
+                        <div class="subwrap"  >
+                            <div class="inner">
+                                <ul class="depth_1 best_seller">
+                                    <li>
+                                        <a href="#">설화수가 처음인 당신을 위한<br> 퍼스트케어 루틴</a>
+                                    </li>
+                                </ul>
+                                <ul class="depth_2 best_seller">
+                                    <li>
+                                        <a href="#"><img src="img/gnb_li_02_bestseller.jpg" alt="베스트 셀러"></a>
+                                        <p class="depth_2_txt">#나의 첫 설화수</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">제품</a>
+                        <div class="subwrap" >
+                            <div class="inner product">
+                                <ul class="depth_1 product">
+                                    <li>
+                                        <a href="#"> ALL</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> NEW ARRIVALS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> BEST ITEM</a>
+                                    </li>
+                                </ul>
+                                <ul class="depth_2 product">
+                                    <li>
+                                        <a href="#"><img src="img/gnb_li_03_skincare.jpg" alt="스킨케어"></a>
+                                        <p class="depth_2_txt">스킨케어</p>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/gnb_li_03_men.jpg" alt="메이크업"></a>
+                                        <p class="depth_2_txt">메이크업</p>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/gnb_li_03_men.jpg" alt="남성"></a>
+                                        <p class="depth_2_txt">남성</p>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/gnb_li_03_skincare.jpg" alt="진설"></a>
+                                        <p class="depth_2_txt">진설</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">설화수 포스트</a>
+                        <div class="subwrap" >
+                            <div class="inner">
+                                <ul class="depth_1 post">
+                                    <li>
+                                        <a href="#"><img src="img/post_1.jpg" alt="명작컬렉션"></a>
+                                        <p class="depth_1_txt">명작컬렉션</p>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/post_2.jpg" alt="설화문화전"></a>
+                                        <p class="depth_1_txt">설화문화전</p>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/post_3.jpg" alt="설화매거진"></a>
+                                        <p class="depth_1_txt">설화매거진</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">스파</a>
+                        <div class="subwrap">
+                            <div class="inner">
+                                <ul class="depth_1 spa">
+                                    <li>
+                                        <a href="#">소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">스파 프로그램</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">예약</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">매장찾기</a>
+                                    </li>
+                                </ul>
+                                <ul class="depth_2">
+                                    <li><a href="#"><img src="img/gnb_li_05_spa.jpg" alt="스파"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">플래그십 스토어</a>
+                        <div class="subwrap">
+                            <div class="inner">
+                                <ul class="depth_1 store">
+                                    <li>
+                                        <a href="#"><img src="img/bg_kv_dosan_pc.jpg" alt="명작컬렉션"></a>
+                                        <p class="depth_1_txt">#설화수 도산</p>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/bg_kv_bukchon_pc.jpg" alt="설화문화전"></a>
+                                        <p class="depth_1_txt">#설화수 북촌</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </header>
+    <!--//헤더-->
+
+    <!-- visual-->
+    <section class="visual">
+        <div class="inner">
+            <h2 class="title">VISUAL</h2>
+            <div class="wrap">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <div class="info">
+                                    <h3 class="info_tag">NEW</h3>
+                                    <p class="info_title">마이 지함보 포장 서비스</p>
+                                    <p class="info_txt">Custom Packaging Service</p>
+                                </div>
+                                <div class="box_btn"><a href="#">View More</a></div>
+                                <div class="pic"><a href="#"><img src="img/packaging_service.png" alt="마이 지함보 포장 서비스"></a></div>
+                            </div>
+                            <div class="box"><a href="#"><img src="img/visual_main_01.jpg" alt="엠버서더 로제"></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <div class="info">
+                                    <h3 class="info_tag">NEW</h3>
+                                    <p class="info_title">마이 지함보 포장 서비스</p>
+                                    <p class="info_txt">Custom Packaging Service</p>
+                                </div>
+                                <div class="box_btn"><a href="#">View More</a></div>
+                                <div class="pic"><a href="#"><img src="img/packaging_service.png" alt="마이 지함보 포장 서비스"></a></div>
+                            </div>
+                            <div class="box"><a href="#"><img src="img/visual_main_01.jpg" alt="엠버서더 로제"></a></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </div>        
+    </section>
+    <!--//visual-->
+
+    <!-- most_loved-->
+<section class="most_loved content">
+    <div class="inner">
+        <h2 class="title">Most Loved</h2>
+        <p class="subtitle">설화수의 인기 제품들을 만나보세요</p>
+        <div class="wrap">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="pic"><a href="#"><img src="img/product_01.png" alt="윤조에센스 6세대"></a></div>
+                            <div class="info">
+                                <p class="product_title">윤조에센스 6세대</p>
+                                <p class="product_title_eng">Fist Care Activating <br>Serum VI</p>
+                                <p class="product_price">140,000원</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box cream">
+                            <div class="pic"><a href="#"><img src="img/product_02.png" alt="자음생크림"></a></div>
+                            <div class="info">
+                                <p class="product_title">자음생크림</p>
+                                <p class="product_title_eng">Concentrated Ginseng <br>
+                                    Renewing Cream EX</p>
+                                <p class="product_price">270,000원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box serum">
+                            <div class="pic"><a href="#"><img src="img/product_03.png" alt="자음생세럼"></a></div>
+                            <div class="info">
+                                <p class="product_title">자음생세럼</p>
+                                <p class="product_title_eng">Concentrated Ginseng <br>
+                                    Renewing Serurm EX</p>
+                                <p class="product_price">220,000원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="pic"><a href="#"><img src="img/product_04.png" alt="순행클렌징오일"></a></div>
+                            <div class="info">
+                                <p class="product_title">순순행클렌징오일</p>
+                                <p class="product_title_eng">Gentle <br>Cleansing Oil</p>
+                                <p class="product_price">75,000원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="pic"><a href="#"><img src="img/product_05.png" alt="순행클렌징폼"></a></div>
+                            <div class="info">
+                                <p class="product_title">순행클렌징폼</p>
+                                <p class="product_title_eng">Gentle <br>Cleansing Foam</p>
+                                <p class="product_price">67,000원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box mask">
+                            <div class="pic"><a href="#"><img src="img/product_06.png" alt="백삼팩"></a></div>
+                            <div class="info">
+                                <p class="product_title">백삼팩</p>
+                                <p class="product_title_eng">White Ginseng<br>Radiance Refining Mask</p>
+                                <p class="product_price">72,000원</p>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- //most_loved-->
+
+    <!-- new-->
+    <section class="new content">
+        <div class="inner">
+            <h2 class="title">NEW ITEM</h2>
+            <div class="wrap">
+                <div class="box">
+                    <div class="info">
+                        <h3 class="new_product_title">윤조에센스 6세대</h3>
+                        <p class="new_product_txt">Concentrated Ginseng</p>
+                        <img class="new_product_01_img" src="img/new_product_01_s.jpg" alt="윤조에센스 6세대 자음생크림 단품">
+                        <a href="#" class="new_product_btn">더보기</a>
+                    </div>
+                    <div class="pic">
+                        <img src="img/new_product_01.jpg" alt="윤조에센스 6세대 본품 세트">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="img/new_product_02.jpg" alt="윤조에센스 백자에디션 본품 세트">
+                    </div>
+                    <div class="info">
+                        <h3 class="new_product_title">윤조에센스 백자에디션</h3>
+                        <p class="new_product_txt">First Care Activating Serum Limited Edition</p>
+                        <img class="new_product_02_img" src="img/new_product_02_s.jpg" alt="윤조에센스 백자에디션 단품">
+                        <a href="#" class="new_product_btn">더보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //new-->
+
+    <!-- Ambassador-->
+    <section class="Ambassador content">
+        <div class="inner">
+            <h2 class="title">Ambassador's Choice</h2>
+            <p class="subtitle">설화수의 뉴 엠버서더 로제가 선택한 아이템을 소개합니다</p>
+            <div class="btn"><a href="#">더보기</a></div>
+            <div class="wrap">
+                <div class="Ambassador_img box">
+                    <img src="img/rose.jpg" alt="엠버서더 로제 메인">
+                    <p class="img_title">Rose's Pick!</p>
+                </div>
+            </div>
+        </div>
+        <div class="Ambassador_item box">
+            <div class="item_01">
+                <img src="img/item_01.jpg" alt="로제가 선택한 기프트 세트">
+                <div class="item_01_btn"><a href="#">View More</a></div>
+            </div>
+            <div class="item_02">
+                <img src="img/item_02.jpg" alt="로제가 선택한 마스크">
+                <div class="item_02_btn"><a href="#">View More</a></div>
+            </div>
+        </div>
+    </section>
+    <!-- //Ambassador-->
+
+    <!-- store -->
+    <section class="store content">
+        <div class="inner">
+            <div class="wrap">
+                <div class="store_info">
+                    <h1 class="title">설화수 플래그십 스토어</h1>
+                </div>
+                <div class="Bukchon box">
+                    <div class="buckchon_title">Bukchon</div>
+                    <button class="buckchon_btn">자세히 보기</button>
+                </div>
+                <div class="Dosan box">
+                    <div class="dosan_title">Dosan</div>
+                    <button class="dosan_btn">자세히 보기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //store -->
+
+    <!-- sns -->
+    <section class="sns content">
+        <div class="inner">
+            <h1 class="title"><img src="img/sns_logo.png" alt="위드 설화수 로고"></h1>
+            <p class="subtitle">설화수의 소식을 확인해보세요</p>
+            <div class="wrap">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><div class="box"><a href="#"><img src="img/sns_01.png" alt="출처기재1"></a></div></div>
+                      <div class="swiper-slide"><div class="box"><a href="#"><img src="img/sns_02.png" alt="출처기재2"></a></div></div>
+                      <div class="swiper-slide"><div class="box"><a href="#"><img src="img/sns_03.png" alt="출처기재3"></a></div></div>
+                      <div class="swiper-slide"><div class="box"><a href="#"><img src="img/sns_04.png" alt="출처기재4"></a></div></div>
+                      <div class="swiper-slide"><div class="box"><a href="#"><img src="img/sns_05.png" alt="출처기재5"></a></div></div>
+                      <div class="swiper-slide"><div class="box"><a href="#"><img src="img/sns_06.png" alt="출처기재6"></a></div></div>
+                      <div class="swiper-slide"><div class="box"><a href="#"><img src="img/sns_07.png" alt="출처기재7"></a></div></div>
+                      <div class="swiper-slide"><div class="box"><a href="#"><img src="img/sns_08.png" alt="출처기재8"></a></div></div>
+                    </div>
+                    <div class="swiper-button-next_bg">
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="swiper-button-prev_bg">
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                  </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- //sns -->
+
+    <!-- news -->
+    <section class="news content">
+        <div class="inner">
+            <div class="wrap">
+                <h1 class="title">뉴스레터 가입</h1>
+                <p class="subtitle">가장 먼저 설화수의 소식을 만나보세요!</p>
+                <div class="email_area">
+
+                    <form action="#" name="email_form" class="email_form">
+                        <label for="email_txt" class="email_group">
+                            <input type="email" placeholder="E-mail" id="email_txt">
+                            <button class="email_btn"><span class="material-symbols-outlined">mail</span></button>
+                        </label>
+                        <p>
+                            <input type="checkbox" id="check1"><label for="check1"></label>설화수 뉴스레터 개인정보 이용동의(약관 보기)
+                        </p>
+                        <button class="subscribe_btn" type="submit">Subscribe</button>
+                    </form>
+                    <div class="result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="news_result_popup" style="display: none;">
+        <div class="inner">
+            <p>감사합니다!</p>
+            <p class="news_result"></p>
+        </div>
+    </div>
+    <!-- //news -->
+
+    <!-- service -->
+    <section class="service content">
+        <div class="inner">
+            <div class="wrap">
+                <div class="box">
+                    <div class="pic"><a href="#"><img src="img/delivery_white.png" alt="무료배송서비스"></a></div>
+                    <div class="info">3만원 이상 구매 시<strong>무료배송</strong></div>
+                </div>
+                <div class="box">
+                    <div class="pic"><a href="#"><img src="img/discount_white.png" alt="첫구매할인서비스"></a></div>
+                    <div class="info">회원 첫 구매<strong>15% 할인</strong></div>
+                </div>
+                <div class="box">
+                    <div class="pic"><a href="#"><img src="img/cosmetic_white.png" alt="무료디럭스샘플제공서비스"></a></div>
+                    <div class="info">무료<strong>디럭스 샘플</strong></div>
+                </div>
+                <div class="box">
+                    <div class="pic"><a href="#"><img src="img/gift_white.png" alt="무료선물포장서비스"></a></div>
+                    <div class="info">무료 선물<strong>포장서비스</strong></div>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <!-- //service -->
+
+    <!-- top_btn -->
+    <div class="btn___top"><a href="#">top</a></div>
+    <!-- //top_btn -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="inner">
+            <div class="footer_link">
+                <div class="footer_link_wrap">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">서비스이용약관</a></li>
+                        <li><a href="#">UGC이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">영상정보처리방침</a></li>
+                        <li><a href="#">사이드맵</a></li>
+                    </ul>
+                </div>
+                <div class="footer_link_wrap">
+                    <span class="footer-item ho-no">고객서비스센터(수신자요금부담) : 080-023-5454</span>
+                    <span class="footer-item footer-counseling-time">(월~금: AM 09:00~PM 06:00)</span>
+                </div>
+            </div>
+            <div class="footer_legality">
+                <div class="logo box">
+                    <h1 class="logo_bt"><a href="#">설화수 로고</a></h1>
+                </div>
+                <div class="footer_sns_wrap">
+                    <span>FOLLOW US</span>
+                    <div class="footer_sns">
+                        <a href="#" class="footer_facebook"><img src="img/icon_facebook.png" alt="페이스북 아이콘"></a>
+                        <a href="#" class="footer_instagram"><img src="img/icon_instagram.png" alt="인스타그램 아이콘"></a>
+                        <a href="#" class="footer_twitter"><img src="img/icon_twitter.png" alt="트위더 아이콘"></a>
+                        <a href="#" class="footer_youtube"><img src="img/icon_youtube.png" alt="유튜브 아이콘"></a>
+                    </div>
+                    <span class="footer_item copyright">
+                        <i class="copy">©</i>
+                         <strong>AMOREPACIFIC</strong>CORPORATION. All rights reserved.
+                        </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+    
+</body>
+</html>
